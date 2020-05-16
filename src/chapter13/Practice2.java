@@ -1,8 +1,15 @@
 package chapter13;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Practice2 {
 
 	public static void main(String[] args) {
+		List<Account> list = new ArrayList<>();
+		Collections.sort(list);
+		
 		Account a = new Account("4649", 1592);
 		System.out.println(a);
 		
