@@ -10,6 +10,12 @@ public class Utils {
 		}
 		return "Ms." + name;
 	}
+	public interface MyFunc1 {
+		public abstract boolean isOdd(int n);
+	}
+	public interface MyFunc2 {
+		public abstract String addNamePrefix(boolean male, String name);
+	}
 	public static void main(String[] args) {
 		MyFunc1 func1 = Utils::isOdd;
 		MyFunc2 func2 = Utils::addNamePrefix;
