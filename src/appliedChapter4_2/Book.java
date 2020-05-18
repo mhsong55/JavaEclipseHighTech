@@ -1,4 +1,4 @@
-package appliedChapter3;
+package appliedChapter4_2;
 
 import java.util.Date;
 import java.util.Comparator;
@@ -29,6 +29,14 @@ public class Book implements Cloneable, Comparable<Book>, Comparator<Book> {
 		result.publishDate = (Date) this.publishDate.clone();
 		result.title = this.title;
 		return result;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		String str = sb.append("book title: ").append(this.title)
+				.append(" Publish date : ").append(this.publishDate).toString(); 
+		return str;
 	}
 
 	/**
