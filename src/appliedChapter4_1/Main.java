@@ -11,7 +11,6 @@ class StrongBox<E> {	// 금고 클래스에 담는 인스턴스 타입 미정: �
 }
 
 public class Main {
-	
 	public static void main(String[] args) {
 		String testStr = "재미있는 코딩";
 		StrongBox<String> strongBox = new StrongBox<>();

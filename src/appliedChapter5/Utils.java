@@ -5,10 +5,7 @@ public class Utils {
 		return n % 2 == 1;
 	}
 	public static String addNamePrefix(boolean male, String name) {
-		if (male == true) {
-			return "Mr." + name;
-		}
-		return "Ms." + name;
+		return male ? "Mr" + name : "Ms" + name;
 	}
 	public interface MyFunc1 {
 		public abstract boolean isOdd(int n);

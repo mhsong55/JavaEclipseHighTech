@@ -2,9 +2,15 @@ package appliedChapter4_2;
 
 public class StrongBox <E> {
 	private E returnVal;
-	private int count = 0;
+	private int count = 1;
 	private KeyType keyType;
-	public enum KeyType {	// 열쇠의 종류를 나타내는 필드 변수	
+	// 상수 정의해서 뺑뺑이 돌리는게 베스트
+	private final static int PADLOCKnum = 1024;
+	private final static int BUTTONnum = 10000;
+	private final static int DIALnum = 30000;
+	private final static int FINGERnum = 1_000_000;
+	
+	public enum KeyType {	// 열쇠의 종류를 나타내는 필드 변수
 		PADLOCK, BUTTON, DIAL, FINGER
 	}
 	public StrongBox (KeyType key) {	// 열쇠의 종류를 받는 생성자
@@ -15,29 +21,29 @@ public class StrongBox <E> {
 	}
 	public E get() {			// 열쇠를 사용하는 get method
 		switch (keyType) {		// key의 종류에 따라 한도가 정해져 있다.
-			case PADLOCK:	// PADLOCK type의 한도는 1,024회
-				if(count >= 1023) {// 0 부터 시작하므로 >= 1023
+			case PADLOCK:	// PADLOCK type의 한도는 1_024회
+				if(count >= PADLOCKnum) {// 1 부터 시작하므로 >= 1_024
 					return this.returnVal; // this.returnVal;
 				} else { 
 					count++;
 					return null;
 				}
-			case BUTTON:	// BUTTON type의 한도는 10,000회
-				if(count >= 9999) {
+			case BUTTON:	// BUTTON type의 한도는 10_000회
+				if(count >= BUTTONnum) {
 					return this.returnVal;
 				} else {
 					count++;
 					return null;
 				}
 			case DIAL:	// DIAL type의 한도는 30,000회
-				if(count >= 29999) {// 0 부터 시작하므로 >= 29999
+				if(count >= DIALnum) {// 1 부터 시작하므로 >= 30_000
 					return this.returnVal;
 				} else {
 					count++;
 					return null;
 				}
 			case FINGER:	// FINGER type의 한도는 1,000,000회
-				if(count >= 999999) {// 0 부터 시작하므로 >= 999999	
+				if(count >= FINGERnum) {// 1 부터 시작하므로 >= 1_000_000	
 					return this.returnVal;
 				} else {
 					count++;
