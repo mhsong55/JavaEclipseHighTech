@@ -13,7 +13,7 @@ public class Practice2 {
 		Department generalAffailDepartment = new Department("총무부", generalAffairsLeader);
 		// 저장할 파일의 경로
 		String filePath = "C:\\Users\\MHSong\\OneDrive\\Documents\\Developer"
-				+ "\\Programming\\MH_git\\Java\\Eclipse\\HighTech\\";
+				+ "\\Programming\\MH_git\\Java\\Eclipse\\HighTech\\appliedChapter7Files\\";
 		// 저장할 파일의 이름: company.dat
 		String fileName = "company.dat";
 		// filePath + fileName을 argument로 받는 fos instance 생성

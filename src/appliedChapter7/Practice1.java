@@ -10,7 +10,7 @@ public class Practice1 {
 	public static void main(String[] args) {
 		// 읽어들일 file의 경로
 		String filePath = "C:\\Users\\MHSong\\OneDrive\\Documents\\Developer"
-				+ "\\Programming\\MH_git\\Java\\Eclipse\\HighTech\\";
+				+ "\\Programming\\MH_git\\Java\\Eclipse\\HighTech\\appliedChapter7Files\\";
 		// 읽을 파일 이름
 		String fileName = "gradle.properties";
 		// Properties 객체 선언 : 읽어올 Properties file의 내용 handling 목적
