@@ -1,14 +1,10 @@
 package appliedChapter7;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.io.Writer;
 import java.util.Properties;
 
-import appliedChapter3.*;
 public class Practice {
 	public static void main(String[] args){
 		try {

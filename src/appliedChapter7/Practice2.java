@@ -17,22 +17,19 @@ public class Practice2 {
 		// 저장할 파일의 이름: company.dat
 		String fileName = "company.dat";
 		// filePath + fileName을 argument로 받는 fos instance 생성
-		try(FileOutputStream fos = new FileOutputStream(filePath + fileName)) {
+		try (FileOutputStream fos = new FileOutputStream(filePath + fileName);
+				ObjectOutputStream oos = new ObjectOutputStream(fos)) {
 			/* Serialization을 위한 ObjectOutputStream type instance, 
 			 * oos 생성하면서 argument로 fos instance를 넣는다.
 			 * oos instance에 instance를 write하면
 			 * fos 에 Serialized된 instance가 write 됨*/
-			try(ObjectOutputStream oos = new ObjectOutputStream(fos)) {
-				oos.writeObject(generalAffairsLeader);
-				oos.writeObject(generalAffailDepartment);
-				oos.flush();
-				oos.close();
-			}
-			fos.close();
+			oos.writeObject(generalAffairsLeader);
+			oos.writeObject(generalAffailDepartment);
+			oos.flush();
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			e.printStackTrace();
-		}
+			System.out.println(e.getLocalizedMessage());
+		} 
 	}
 }

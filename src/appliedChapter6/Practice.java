@@ -16,10 +16,11 @@ public class Practice {
 			while (br.readLine() != null) {
 				System.out.println(br.readLine());
 			}
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		} 
 	}
 }

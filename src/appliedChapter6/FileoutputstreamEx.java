@@ -5,7 +5,6 @@ import java.io.IOException;
 
 public class FileoutputstreamEx {
 	public static void main(String[] args) {
-		
 		try {
 			String fileAddr = "c:\\Users\\MHSong\\OneDrive\\Documents"
 					+ "\\Developer\\Programming\\MH_git\\Java\\Eclipse"

@@ -26,24 +26,34 @@ public class Prac1 {
 		decompress(decompFilePath + decompFileName, compFilePath + compFileName);
 	}
 	public static void fileCopy(String oriFilePath, String copyFilePath) {
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
 		try {
 			// 읽을 파일
-			FileInputStream fis = new FileInputStream(oriFilePath);
+			fis = new FileInputStream(oriFilePath);
 			// 복사할 파일
-			FileOutputStream fos = new FileOutputStream(copyFilePath);
+			fos = new FileOutputStream(copyFilePath);
 			int fileByte = 0;
 			// fis.read()가 -1이면 파일 다 읽은 것
 			while ((fileByte = fis.read()) != -1) {
 				fos.write(fileByte);
 			}
 			fos.flush();
-			// 자원 사용 종료
-			fis.close();
-			fos.close();
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			System.out.println(e.getLocalizedMessage());
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println(e.getLocalizedMessage());
+		} finally {
+			try {	// 자원 사용 종료
+				if(fis != null) {
+					fis.close();
+				} 
+				if(fos != null) {
+					fos.close();
+				}
+			} catch (IOException e) {
+				System.out.println(e.getLocalizedMessage());
+			} 
 		}
 	}
 	public static void compress(String oriFile, String compFile) {
