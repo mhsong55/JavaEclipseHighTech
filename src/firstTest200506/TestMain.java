@@ -30,6 +30,7 @@ public class TestMain {
 				System.out.println("NO");
 			}
 		}
+		sc.close();
 	}
 	// 등차수열
 	public static String testEvenOdd(int num) {
@@ -57,12 +58,14 @@ public class TestMain {
 				System.out.print(sequence);
 			}
 		}
+		sc.close();
 	}
 	// 숫자 판별
 	public static void test03() {
 		Scanner sc = new Scanner(System.in);
 		List<Integer> numCardInput = new ArrayList<Integer>();
 		List<Integer> numCardTotal = new ArrayList<Integer>() {
+			private static final long serialVersionUID = -3875109302203502647L;
 			{add(1); add(2); add(3); add(4); add(5);}
 		};
 		for(int i = 0; i < 4; i++) {
@@ -73,6 +76,7 @@ public class TestMain {
 				System.out.println(numCard);
 			}
 		}
+		sc.close();
 	}
 	// 태풍의 간격
 	public static void test04() {
@@ -91,6 +95,7 @@ public class TestMain {
 		} else {
 			System.out.println("No");
 		}
+		sc.close();
 	}
 	
 	public static void test05() {
@@ -102,6 +107,7 @@ public class TestMain {
 		for(int i = 0; i < 4; i++) {
 			System.out.println(stormDay.get(i+1) - stormDay.get(i));
 		}
+		sc.close();
 	}
 	// 빼빼로 파티
 	public static void test06() {
@@ -121,6 +127,7 @@ public class TestMain {
 		} else {
 			System.out.println(shortage);
 		}
+		sc.close();
 	}
 	// 카드 정렬
 	public static void test07() {
@@ -134,6 +141,7 @@ public class TestMain {
 		score[1] = decision(numCard.get(2), numCard.get(3));
 		
 		System.out.println(score[0] + score[1]);
+		sc.close();
 	}
 	public static int decision(int a, int b) {
 		int score = 0;
@@ -157,6 +165,7 @@ public class TestMain {
 			totalCal += intList.get(i);
 		}
 		System.out.println(totalCal);
+		sc.close();
 	}
 	public static void test08_1() {
 		Scanner sc = new Scanner(System.in);
@@ -166,6 +175,7 @@ public class TestMain {
 		int one = Collections.frequency(strList, "/");
 		int ten = Collections.frequency(strList, "<");
 		System.out.println(10 * ten + one);
+		sc.close();
 	}
 	// 흑 또는 백
 	public static void test09() {
@@ -184,6 +194,7 @@ public class TestMain {
 				}
 			}
 			grayToBandW.add(input);
+			sc.close();
 		}
 		for(int h = 0; h < imgHeight; h++) {
 			for(int w = 0; w < imgWidth; w++) {
@@ -210,5 +221,6 @@ public class TestMain {
 				System.out.println("False");
 			}
 		}
+		sc.close();
 	}
 }

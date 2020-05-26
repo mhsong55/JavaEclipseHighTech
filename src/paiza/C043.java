@@ -61,5 +61,6 @@ public class C043 {
                 System.out.print(maxValList.get(i) + " ");
             }
         }
+        sc.close();
     }
 }

@@ -37,5 +37,6 @@ public class C075 {
 		for(int i = 0; i < count; i++) {
 			System.out.println(balanceList.get(i) + " " + pointList.get(i));
 		}
+		sc.close();
 	}
 }

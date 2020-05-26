@@ -51,6 +51,7 @@ public class C031 {
 			}
 			System.out.println(strLocalTime.substring(2));
 		}
+		sc.close();
 	}
 
 }

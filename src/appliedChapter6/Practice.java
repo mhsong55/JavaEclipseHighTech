@@ -13,14 +13,15 @@ public class Practice {
 			String fileName = "test.dat";
 			FileReader fr = new FileReader(filePath + fileName);
 			BufferedReader br = new BufferedReader(fr);
-			while (br.readLine() != null) {
-				System.out.println(br.readLine());
+			String str = "";
+			while ((str = br.readLine()) != null) {
+				System.out.println(str);
 			}
-			
+			br.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} 
+		}
 	}
 }

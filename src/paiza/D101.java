@@ -40,6 +40,7 @@ public class D101 {
 				System.out.println("NO");
 			}
 		}
+		sc.close();
 	}
 
 }

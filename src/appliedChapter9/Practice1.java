@@ -3,7 +3,6 @@ package appliedChapter9;
 import java.sql.*;
 
 public class Practice1 {
-	
 	public static void main(String[] args) throws SQLException {
 		String useDB = "java_practice";
 		Connection connection = connectDB(useDB);
@@ -19,6 +18,7 @@ public class Practice1 {
 		String selectAllQuery = "select * from item";
 		selectQuery(connection, selectAllQuery, useDB);
 	}
+	
 	public static Connection connectDB (String useDB) {
 		final String ID = "root";
 		final String PASSWORD = "qortjf90";
@@ -50,6 +50,7 @@ public class Practice1 {
 		System.out.println("---- DB connection complete ----");
 		return connection;
 	}
+	
 	public static void dDLQuery(Connection connection, String query, String useDB) {
 		PreparedStatement preStatement = null;
 		try {
@@ -83,7 +84,7 @@ public class Practice1 {
 			} catch(SQLException e) {
 				System.out.println(e.getMessage());
 				e.printStackTrace();
-			}	// end finally try 
+			}	// end finally try
 		}	// end try
 	}	// end stmtQuery method
 	

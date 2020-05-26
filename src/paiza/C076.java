@@ -63,6 +63,7 @@ public class C076 {
 			}
 		}
 		System.out.println(totalWage);
+		sc.close();
 	}
 
 }

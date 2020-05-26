@@ -11,5 +11,6 @@ public class D008 {
 		} else {
 			System.out.println("odd");
 		}
+		sc.close();
 	}
 }
