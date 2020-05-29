@@ -1,4 +1,4 @@
-package Project;
+package JavaProject3rdExam_HNLee;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

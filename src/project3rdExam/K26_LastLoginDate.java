@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class K26_LastLoginDate { 
-// implements Comparable<LocalDate> {
 	private int k26_memberID = 0;
 	private LocalDate k26_lastLoginDate = LocalDate.now();
 	private DateTimeFormatter k26_formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");

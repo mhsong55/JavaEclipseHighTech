@@ -1,11 +1,11 @@
-package Project;
+package JavaProject3rdExam_HNLee;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import static Project.Main.Logs;
+import static JavaProject3rdExam_HNLee.Main.Logs;
 
 // requirements is point rank 100
 // if used together with method LogWrite, it becomes complicated and classified separately

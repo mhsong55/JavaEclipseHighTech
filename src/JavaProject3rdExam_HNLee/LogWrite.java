@@ -1,10 +1,10 @@
-package Project;
+package JavaProject3rdExam_HNLee;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-import static Project.Main.Logs;
+import static JavaProject3rdExam_HNLee.Main.Logs;
 
 // write file to meet requirements
 public class LogWrite {

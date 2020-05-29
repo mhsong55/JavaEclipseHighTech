@@ -1,4 +1,4 @@
-package Project;
+package JavaProject3rdExam_HNLee;
 
 public class Log implements Comparable<Log> {
 
